@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Nosotros | Baja Tax</title>
+<title>Sobre Baja Tax | Expertos Contables y Fiscales en Tijuana</title>
+  <meta name="description" content="Conoce la trayectoria de Baja Tax, una firma contable bilingüe en Tijuana comprometida con la transparencia, orden y el éxito financiero de nuestros clientes.">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -81,6 +82,12 @@ tailwind.config = {
 </script>
 
 <style>
+
+    /* Uniformidad Tipográfica Global */
+    h1 { font-size: clamp(32px, 6vw, 56px) !important; font-weight: 800 !important; letter-spacing: -0.03em !important; line-height: 1.1 !important; }
+    h2 { font-size: clamp(26px, 4.5vw, 40px) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.2 !important; }
+    h3 { font-size: clamp(20px, 3vw, 28px) !important; font-weight: 700 !important; letter-spacing: -0.01em !important; line-height: 1.3 !important; }
+
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
@@ -89,45 +96,73 @@ tailwind.config = {
     backdrop-filter: blur(2px);
   }
 </style>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="icon" sizes="192x192" href="assets/favicon.png">
+    <link rel="icon" sizes="512x512" href="assets/favicon.png">
 </head>
 
 <body class="bg-surface text-on-surface font-body antialiased">
 
 <!-- Header -->
-<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md">
-  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-    <a class="flex items-center" href="index.html">
-      <img alt="Baja Tax Logo" class="h-[32px] w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ui_-Y9OnGkRmlj1W2U9myw7c-NgvciQcyEqy8Z_5fPtGm_OnMVx85jzHq-1JMgN64czlhGEw_m3kkpzdB6wM5gdTbCH5Z18TQsfDsXwOym0maSXPpvTMCN9nbYkxZua1bsnyayrnHu7c9ofX9PmAxqtTjvwTzmCUrYSIeLUcoiPIPmzUKTNWr-iNfti1pFRF6st7rviv0IiaAo46rzwfy_5sr0Dq2w67tar-Sq6V7Z1yFMe43QkSbjfMkuM4JCQRgjBo8WqHrI7xA">
-    </a>
 
-    <nav class="hidden md:flex items-center space-x-8">
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="index.html">Inicio</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="persona-fisica.html">Persona Física</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="empresas.html">Empresas</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="servicios.html">Servicios</a>
-      <a class="text-primary border-b-2 border-primary pb-1 font-body font-medium text-sm tracking-tight" href="nosotros.html">Nosotros</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="recursos.html">Recursos</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="contacto.html">Contacto</a>
-    </nav>
+<!-- Standard Header -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 md:px-8 py-3 md:py-4 max-w-7xl mx-auto">
+<div class="flex items-center h-8 md:h-10">
+<a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
+</div>
+<a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+    Agenda tu asesoría
+</a>
+<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+</button>
+</div>
 
-    <a class="text-white px-6 py-2.5 rounded-xl hover:brightness-110 transition-all font-headline font-bold text-sm bg-[#006e27]" href="contacto.html">
-      Agenda tu asesoría
-    </a>
-  </div>
-</header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-primary">close</span>
+</button>
+<a href="/" class="text-primary hover:text-secondary">Inicio</a>
+<a href="/persona-fisica" class="text-primary hover:text-secondary">Persona Física</a>
+<a href="/empresas" class="text-primary hover:text-secondary">Empresas</a>
+<a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
+<a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
+<a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
+<a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
+<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg">Agenda tu asesoría</a>
+</div>
+</nav>
+
+
+
 
 <main class="pt-24">
 
   <!-- Hero Section -->
-  <section class="px-8 py-24 max-w-7xl mx-auto">
-    <div class="grid grid-cols-12 gap-12 items-center">
+  <section class="px-8 py-12 md:py-24 max-w-7xl mx-auto">
+    <div class="grid grid-cols-12 gap-6 md:p-6 md:p-12 items-center">
       <div class="col-span-12 lg:col-span-7">
         <div class="max-w-xl">
           <span class="text-primary/40 font-headline font-bold tracking-[0.25em] text-[10px] uppercase mb-6 block">Nuestra firma</span>
-          <h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
+          <h1 class="font-headline font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
             Claridad, orden y confianza para tus decisiones fiscales
           </h1>
-          <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed font-normal">
+          <p class="text-base md:text-lg md:text-xl text-on-surface-variant leading-relaxed font-normal">
             Somos una firma local de contadores en Tijuana, Baja California, especializada en impuestos, nóminas, contabilidad, servicios legales y asesoría para negocios. Acompañamos a personas físicas y empresas con un enfoque claro, profesional y bilingüe. 
           </p>
         </div>
@@ -144,7 +179,7 @@ tailwind.config = {
 
   <!-- Stats Bar -->
   <section class="bg-primary py-16">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-around items-center gap-12 text-center">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-around items-center gap-6 md:p-6 md:p-12 text-center">
       <div>
         <div class="text-5xl font-headline font-extrabold text-white mb-3">18+</div>
         <div class="text-white/90 font-headline font-bold tracking-[0.12em] text-[11px] uppercase">Años de experiencia</div>
@@ -168,10 +203,10 @@ tailwind.config = {
 
   <!-- About / Vision -->
   <section class="bg-surface-container-low py-24">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-20 items-center">
       <div class="order-2 lg:order-1">
-        <div class="bg-surface-container-lowest p-12 rounded-2xl">
-          <h2 class="text-3xl font-headline font-bold text-primary mb-8">Quiénes somos</h2>
+        <div class="bg-surface-container-lowest p-6 md:p-6 md:p-12 rounded-2xl">
+          <h2 class="font-headline font-bold text-primary mb-8">Quiénes somos</h2>
           <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
             En Baja Tax trabajamos para que nuestros clientes mantengan sus finanzas y responsabilidades fiscales en orden. Nuestro propósito es brindar tranquilidad, evitar errores costosos y acompañar cada decisión con honestidad, responsabilidad y claridad.
           </p>
@@ -179,7 +214,7 @@ tailwind.config = {
             Aspiramos a consolidarnos como la firma de referencia en Baja California y San Diego, destacando por nuestra excelencia técnica, confianza institucional y capacidad para explicar temas complejos con un lenguaje sencillo.
           </p>
           <div class="relative pl-8 border-l-2 border-secondary/40">
-            <p class="text-primary font-normal text-lg leading-loose italic">
+            <p class="text-primary font-normal text-base md:text-lg leading-loose italic">
               "Tranquilidad fiscal para personas y empresas que quieren hacer las cosas bien."
             </p>
           </div>
@@ -187,46 +222,46 @@ tailwind.config = {
       </div>
 
       <div class="order-1 lg:order-2">
-        <img alt="Equipo profesional y espacio de trabajo" class="rounded-2xl w-full aspect-[4/3] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCf6B3Ml4jwASaj6M4S94fLPr2DH6YI-4YxtxFpeQBrzK8X0K-kCkw7jaAx3BjZ4T_BBtJN-r_S9p7YwavmKmZtNQzQ14az5mjjVs4pca_1TsST-8cCHY7K8ABupoNrY9KGR42zniVlGD9pqTWsajLYaUKxbGcEvVL0mz_OiQaCtuMSjQufc7eH4MO56IJ70ktVrHQM2tyx5jClc6hAfHomDapr73NGPo0Qk8X2RuVdBhe4w-hJgPFMLyGCX3m5UeZqjw8nrXimW4">
+        <img alt="Oficina real de Baja Tax en Tijuana" class="rounded-2xl w-full aspect-[4/3] object-cover shadow-lg" src="assets/oficina.png">
       </div>
     </div>
   </section>
 
   <!-- Values Section -->
-  <section class="py-24 px-8 max-w-7xl mx-auto">
+  <section class="py-12 md:py-24 px-8 max-w-7xl mx-auto">
     <div class="text-center mb-20">
       <span class="text-primary/40 font-headline font-bold tracking-[0.25em] text-[10px] uppercase mb-4 block">Nuestros principios</span>
-      <h2 class="text-4xl font-headline font-extrabold text-primary">Valores institucionales</h2>
+      <h2 class="font-headline font-extrabold text-primary">Valores institucionales</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-      <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
+      <div class="bg-surface-container-low p-6 md:p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
         <span class="material-symbols-outlined text-3xl text-primary mb-6">verified_user</span>
-        <h3 class="text-lg font-headline font-bold text-primary mb-3">Honestidad</h3>
+        <h3 class="font-headline font-bold text-primary mb-3">Honestidad</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed font-body">Actuamos con transparencia y veracidad en cada recomendación.</p>
       </div>
 
-      <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
+      <div class="bg-surface-container-low p-6 md:p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
         <span class="material-symbols-outlined text-3xl text-primary mb-6">gavel</span>
-        <h3 class="text-lg font-headline font-bold text-primary mb-3">Prudencia</h3>
+        <h3 class="font-headline font-bold text-primary mb-3">Prudencia</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed font-body">Analizamos cada situación con cuidado para reducir riesgos y proteger tu patrimonio.</p>
       </div>
 
-      <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
+      <div class="bg-surface-container-low p-6 md:p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
         <span class="material-symbols-outlined text-3xl text-primary mb-6">favorite</span>
-        <h3 class="text-lg font-headline font-bold text-primary mb-3">Empatía</h3>
+        <h3 class="font-headline font-bold text-primary mb-3">Empatía</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed font-body">Escuchamos, comprendemos tu contexto y te acompañamos con cercanía profesional.</p>
       </div>
 
-      <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
+      <div class="bg-surface-container-low p-6 md:p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
         <span class="material-symbols-outlined text-3xl text-primary mb-6">assignment_turned_in</span>
-        <h3 class="text-lg font-headline font-bold text-primary mb-3">Responsabilidad</h3>
+        <h3 class="font-headline font-bold text-primary mb-3">Responsabilidad</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed font-body">Cumplimos en tiempo y forma con cada proceso y obligación fiscal.</p>
       </div>
 
-      <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
+      <div class="bg-surface-container-low p-6 md:p-8 rounded-xl hover:bg-surface-container transition-colors duration-300 flex flex-col h-full">
         <span class="material-symbols-outlined text-3xl text-primary mb-6">lock</span>
-        <h3 class="text-lg font-headline font-bold text-primary mb-3">Confidencialidad</h3>
+        <h3 class="font-headline font-bold text-primary mb-3">Confidencialidad</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed font-body">Protegemos tu información financiera con total discreción y cuidado.</p>
       </div>
     </div>
@@ -237,20 +272,20 @@ tailwind.config = {
     <div class="max-w-7xl mx-auto px-8">
       <div class="text-center mb-16">
         <span class="text-primary/40 font-headline font-bold tracking-[0.25em] text-[10px] uppercase mb-4 block">Qué hacemos</span>
-        <h2 class="text-4xl font-headline font-extrabold text-primary">Servicios que respaldan tu operación</h2>
+        <h2 class="font-headline font-extrabold text-primary">Servicios que respaldan tu operación</h2>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl">
-          <h3 class="text-xl font-bold text-primary mb-3">Impuestos y contabilidad</h3>
+        <div class="bg-white p-6 md:p-8 rounded-xl">
+          <h3 class="font-bold text-primary mb-3">Impuestos y contabilidad</h3>
           <p class="text-on-surface-variant leading-relaxed">Preparación de impuestos, contabilidad electrónica y asesoría fiscal con apego a la normatividad vigente.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl">
-          <h3 class="text-xl font-bold text-primary mb-3">Nóminas y seguridad social</h3>
+        <div class="bg-white p-6 md:p-8 rounded-xl">
+          <h3 class="font-bold text-primary mb-3">Nóminas y seguridad social</h3>
           <p class="text-on-surface-variant leading-relaxed">Procesamiento de nómina y cumplimiento laboral para mantener a tu empresa en orden.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl">
-          <h3 class="text-xl font-bold text-primary mb-3">Legal y asesoría para negocios</h3>
+        <div class="bg-white p-6 md:p-8 rounded-xl">
+          <h3 class="font-bold text-primary mb-3">Legal y asesoría para negocios</h3>
           <p class="text-on-surface-variant leading-relaxed">Apoyo legal, constitución de empresas, facturación 4.0 y acompañamiento estratégico para negocios.</p>
         </div>
       </div>
@@ -261,13 +296,13 @@ tailwind.config = {
   <section class="px-8 pb-24">
     <div class="max-w-7xl mx-auto rounded-2xl overflow-hidden relative bg-primary px-8 py-20 text-center">
       <div class="relative z-10 max-w-3xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white mb-8 tracking-tight">¿Listo para recibir asesoría clara y profesional?</h2>
-        <p class="text-white/80 text-lg mb-16 max-w-2xl mx-auto font-body">Agenda una asesoría y recibe orientación para mantener tus finanzas y obligaciones fiscales en orden.</p>
+        <h2 class="font-headline font-extrabold text-white mb-8 tracking-tight">¿Listo para recibir asesoría clara y profesional?</h2>
+        <p class="text-white/80 text-base md:text-lg mb-16 max-w-2xl mx-auto font-body">Agenda una asesoría y recibe orientación para mantener tus finanzas y obligaciones fiscales en orden.</p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <a class="bg-secondary text-white px-8 py-4 rounded-xl font-headline font-bold hover:brightness-110 transition-all" href="contacto.html">
+          <a class="bg-secondary text-white px-8 py-4 rounded-xl font-headline font-bold hover:brightness-110 transition-all" href="/contacto">
             Agenda tu asesoría
           </a>
-          <a class="bg-white/5 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-headline font-bold hover:bg-white/10 transition-all" href="servicios.html">
+          <a class="bg-white/5 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-headline font-bold hover:bg-white/10 transition-all" href="/servicios">
             Ver servicios
           </a>
         </div>
@@ -276,68 +311,80 @@ tailwind.config = {
   </section>
 </main>
 
-<!-- WhatsApp Floating -->
-<a aria-label="WhatsApp" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform" href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0" target="_blank">
-  <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.82l.303.18c1.397.831 3.013 1.27 4.673 1.27 4.842 0 8.783-3.94 8.785-8.782.002-2.346-.913-4.553-2.575-6.216-1.663-1.663-3.868-2.58-6.214-2.58-4.841 0-8.781 3.941-8.784 8.783-.001 1.727.46 3.415 1.334 4.888l.198.334-1.062 3.878 3.972-1.042z"></path>
-  </svg>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
 
 <!-- Footer -->
-<footer class="bg-[#001c3a] text-white py-16 font-['Inter']">
-  <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
-    <div class="col-span-1">
-      <img alt="Baja Tax Logo" class="h-8 mb-8 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugu_lk3-7CNFZ0qU2zVYLRTgieI5UMshuQkOMT5nKEJM42--cgW1rwSKxuTYpn8AO9mSUvF02XCKzPZdvl9uFAo25_x7lFCjHOeOW8WTRv4EWY1XpoYr5YGfyk4NQfWShw733_yXy4s96k4ctKAtsvaMUavI0qiObpwpiVafvY7_Cb6MPaCWb1E2xMJU6i3z84PTw4adn_3g83P_aOqzOYZz4aYDmDuor9s7o_fmwXgDjjo70OumZvdXoVzbi_oBEmbaK8Kmxt46g">
-      <p class="text-white/70 text-sm leading-relaxed mb-8 max-w-[280px]">
-        Firma contable y fiscal en Tijuana enfocada en brindar claridad, orden y seguridad a personas físicas y empresas.
+  <footer class="bg-[#002b55] text-white pt-16 pb-8 font-body">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-6 md:p-12 mb-16">
+      <!-- Column 1 -->
+      <div class="space-y-6">
+        <img alt="Baja Tax" class="h-10 w-auto" src="assets/logo2.png">
+        <p class="text-white/70 text-sm leading-relaxed">
+          Firma contable y fiscal en Tijuana enfocada en brindar claridad, orden y seguridad a personas físicas y empresas.
+        </p>
+        <div class="flex gap-4">
+          <a class="text-[#48ac57] hover:text-white transition-colors" href="https://www.facebook.com/BajaTax/" target="_blank"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a class="text-[#48ac57] hover:text-white transition-colors" href="mailto:info@bajatax.com?subject=Solicitud%20de%20Asesor%C3%ADa%20-%20BajaTax&body=Hola%2C%20visit%C3%A9%20la%20p%C3%A1gina%20de%20BajaTax%20y%20me%20interesa%20una%20asesor%C3%ADa.%0A%0AMi%20nombre%20es%3A%20%0ASoy%20persona%3A%20f%C3%ADsica/moral%20%0AMi%20correo%20es%3A%20%0AMi%20n%C3%BAmero%20de%20tel%C3%A9fono%20es%3A%20%0AEl%20servicio%20que%20me%20interesa%20es%3A%20%28Contabilidad%20/%20Impuestos%20/%20N%C3%B3minas%20/%20Auditor%C3%ADa%20/%20Legal%20/%20Facturaci%C3%B3n%29"><span class="material-symbols-outlined">mail</span></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h4 class="font-headline font-bold text-white mb-6 tracking-wider text-sm text-[11px] uppercase tracking-[0.2em] text-[#48ac57]">NAVEGACIÓN</h4>
+        <ul class="space-y-4 text-white/70 text-sm">
+          <li><a class="hover:text-white transition-colors" href="/">Inicio</a></li>
+          <li><a class="hover:text-white transition-colors" href="/nosotros">Nosotros</a></li>
+          <li><a class="hover:text-white transition-colors" href="/servicios">Servicios</a></li>
+          <li><a class="hover:text-white transition-colors" href="/contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h4 class="font-headline font-bold text-white mb-6 tracking-wider text-sm text-[11px] uppercase tracking-[0.2em] text-[#48ac57]">LEGAL</h4>
+        <ul class="space-y-4 text-white/70 text-sm">
+          <li><a class="hover:text-white transition-colors" href="/privacidad">Privacidad</a></li>
+          <li><a class="hover:text-white transition-colors" href="/terminos">Términos</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h4 class="font-headline font-bold text-white mb-6 tracking-wider text-sm text-[11px] uppercase tracking-[0.2em] text-[#48ac57]">CONTACTO</h4>
+        <ul class="space-y-4 text-white/70 text-sm">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl shrink-0">location_on</span>
+            <a class="hover:text-white transition-colors"
+               href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
+               target="_blank"> Plaza Insurgentes, Blvd. Insurgentes 18098, Río Tijuana 3.ª Etapa, 22226 Tijuana, B.C. Int. 8A4 y 8A5. </a>
+          </li>
+          <li class="flex items-center gap-3">
+            <a class="text-[#48ac57] hover:text-white transition-colors" href="mailto:info@bajatax.com?subject=Solicitud%20de%20Asesor%C3%ADa%20-%20BajaTax&body=Hola%2C%20visit%C3%A9%20la%20p%C3%A1gina%20de%20BajaTax%20y%20me%20interesa%20una%20asesor%C3%ADa.%0A%0AMi%20nombre%20es%3A%20%0ASoy%20persona%3A%20f%C3%ADsica/moral%20%0AMi%20correo%20es%3A%20%0AMi%20n%C3%BAmero%20de%20tel%C3%A9fono%20es%3A%20%0AEl%20servicio%20que%20me%20interesa%20es%3A%20%28Contabilidad%20/%20Impuestos%20/%20N%C3%B3minas%20/%20Auditor%C3%ADa%20/%20Legal%20/%20Facturaci%C3%B3n%29"><span class="material-symbols-outlined text-lg md:text-xl shrink-0">mail</span></a>
+            <a class="hover:text-white" href="mailto:info@bajatax.com?subject=Solicitud%20de%20Asesor%C3%ADa%20-%20BajaTax&body=Hola%2C%20visit%C3%A9%20la%20p%C3%A1gina%20de%20BajaTax%20y%20me%20interesa%20una%20asesor%C3%ADa.%0A%0AMi%20nombre%20es%3A%20%0ASoy%20persona%3A%20f%C3%ADsica/moral%20%0AMi%20correo%20es%3A%20%0AMi%20n%C3%BAmero%20de%20tel%C3%A9fono%20es%3A%20%0AEl%20servicio%20que%20me%20interesa%20es%3A%20%28Contabilidad%20/%20Impuestos%20/%20N%C3%B3minas%20/%20Auditor%C3%ADa%20/%20Legal%20/%20Facturaci%C3%B3n%29">info@bajatax.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl shrink-0">call</span>
+            <a class="hover:text-white transition-colors"
+               href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+               target="_blank"> +52 664 733 8483 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-8 pt-8 border-t border-white/10">
+      <p class="text-center text-white/70 text-xs">
+        © 2026 Baja Tax. Todos los derechos reservados.
       </p>
     </div>
+  </footer>
 
-    <div>
-      <h4 class="font-['Plus_Jakarta_Sans'] font-bold text-[11px] uppercase tracking-[0.2em] text-[#48ac57] mb-8">Navegación</h4>
-      <ul class="space-y-4 text-white/70 text-sm">
-        <li><a class="hover:text-white transition-colors" href="index.html">Inicio</a></li>
-        <li><a class="hover:text-white transition-colors" href="nosotros.html">Nosotros</a></li>
-        <li><a class="hover:text-white transition-colors" href="servicios.html">Servicios</a></li>
-        <li><a class="hover:text-white transition-colors" href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
 
-    <div>
-      <h4 class="font-['Plus_Jakarta_Sans'] font-bold text-[11px] uppercase tracking-[0.2em] text-[#48ac57] mb-8">Legal</h4>
-      <ul class="space-y-4 text-white/70 text-sm">
-        <li><a class="hover:text-white transition-colors" href="/">Privacidad</a></li>
-        <li><a class="hover:text-white transition-colors" href="/">Términos</a></li>
-      </ul>
-    </div>
 
-    <div>
-      <h4 class="font-['Plus_Jakarta_Sans'] font-bold text-[11px] uppercase tracking-[0.2em] text-[#48ac57] mb-8">Contacto</h4>
-      <ul class="space-y-4 text-white/70 text-sm">
-        <li class="flex items-start gap-3">
-          <span class="material-symbols-outlined text-[#48ac57] text-lg">location_on</span>
-          <a class="hover:text-white transition-colors" href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7" target="_blank">Plaza Insurgentes, Blvd. Insurgentes 18098, Tijuana, B.C.</a>
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[#48ac57] text-lg">mail</span>
-          <a class="hover:text-white" href="mailto:info@bajatax.com">info@bajatax.com</a>
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[#48ac57] text-lg">call</span>
-          <a class="hover:text-white" href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0" target="_blank">+52 664 733 8483</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-8 mt-16">
-    <div class="border-t border-white/10 pt-8 flex justify-center">
-      <p class="text-white/40 text-[10px] font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-[0.1em]">
-        © 2024 Baja Tax. Todos los derechos reservados.
-      </p>
-    </div>
-  </div>
-</footer>
-
-</body>
+\n</body>
 </html>
+
