@@ -86,6 +86,14 @@
 
   <style>
 
+    
+    /* Active Nav Link */
+    .nav-active {
+      color: #002d4c !important;
+      font-weight: 700 !important;
+      border-bottom: 3px solid #006e27;
+      padding-bottom: 4px;
+    }
     /* Uniformidad Tipográfica Global */
     h1 { font-size: clamp(32px, 6vw, 56px) !important; font-weight: 800 !important; letter-spacing: -0.03em !important; line-height: 1.1 !important; }
     h2 { font-size: clamp(26px, 4.5vw, 40px) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.2 !important; }
@@ -129,7 +137,7 @@
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/servicios">Servicios</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/nosotros">Nosotros</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200 nav-active" href="/contacto">Contacto</a>
 </div>
 <a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
     Agenda tu asesoría
@@ -152,7 +160,7 @@
 <a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
 <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
 <a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
-<a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
+<a href="/contacto" class="text-secondary font-extrabold border-b-4 border-secondary pb-1">Contacto</a>
 <a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg">Agenda tu asesoría</a>
 </div>
 </nav>

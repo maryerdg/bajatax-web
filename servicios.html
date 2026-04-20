@@ -8,6 +8,14 @@
 <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-primary-fixed": "#001d34", "primary-fixed-dim": "#9bcbfd", "inverse-on-surface": "#eef1f4", "error-container": "#ffdad6", "on-surface-variant": "#42474f", "on-tertiary-container": "#90afe0", "surface-container-highest": "#e0e3e6", "tertiary-fixed-dim": "#a8c8fb", "on-surface": "#181c1e", "on-secondary-container": "#0e742c", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#00531b", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e6", "secondary-fixed-dim": "#7edb85", "tertiary-container": "#20426d", "secondary-container": "#9af89f", "surface-bright": "#f7fafd", "tertiary-fixed": "#d4e3ff", error: "#ba1a1a", surface: "#f7fafd", "inverse-surface": "#2d3133", background: "#f7fafd", "outline-variant": "#c2c7d0", "surface-container": "#ebeef1", "inverse-primary": "#9bcbfd", secondary: "#006e27", outline: "#72777f", "surface-container-low": "#f1f4f7", "on-tertiary-fixed": "#001c3a", "on-primary-fixed-variant": "#0c4a75", "on-secondary-fixed": "#002107", "on-primary": "#ffffff", primary: "#002d4c", "on-error": "#ffffff", "on-background": "#181c1e", "surface-container-high": "#e5e8eb", "surface-dim": "#d7dadd", "secondary-fixed": "#9af89f", "on-secondary": "#ffffff", "surface-tint": "#2e628e", "on-tertiary-fixed-variant": "#264873", tertiary: "#012b55", "primary-fixed": "#cfe5ff", "on-primary-container": "#82b1e3", "primary-container": "#00446f", "on-error-container": "#93000a"}, fontFamily: {headline: ["Be Vietnam Pro"], body: ["Be Vietnam Pro"], inter: ["Inter", "sans-serif"], label: ["Be Vietnam Pro"], display: "Be Vietnam Pro", jakarta: ["Plus Jakarta Sans", "sans-serif"]}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}}}};</script>
 <style>
 
+    
+    /* Active Nav Link */
+    .nav-active {
+      color: #002d4c !important;
+      font-weight: 700 !important;
+      border-bottom: 3px solid #006e27;
+      padding-bottom: 4px;
+    }
     /* Uniformidad Tipográfica Global */
     h1 { font-size: clamp(32px, 6vw, 56px) !important; font-weight: 800 !important; letter-spacing: -0.03em !important; line-height: 1.1 !important; }
     h2 { font-size: clamp(26px, 4.5vw, 40px) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.2 !important; }
@@ -25,6 +33,14 @@
     </style>
 <style>
 
+    
+    /* Active Nav Link */
+    .nav-active {
+      color: #002d4c !important;
+      font-weight: 700 !important;
+      border-bottom: 3px solid #006e27;
+      padding-bottom: 4px;
+    }
     /* Uniformidad Tipográfica Global */
     h1 { font-size: clamp(32px, 6vw, 56px) !important; font-weight: 800 !important; letter-spacing: -0.03em !important; line-height: 1.1 !important; }
     h2 { font-size: clamp(26px, 4.5vw, 40px) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.2 !important; }
@@ -49,7 +65,7 @@
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200 nav-active" href="/servicios">Servicios</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/nosotros">Nosotros</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
@@ -72,7 +88,7 @@
 <a href="/" class="text-primary hover:text-secondary">Inicio</a>
 <a href="/persona-fisica" class="text-primary hover:text-secondary">Persona Física</a>
 <a href="/empresas" class="text-primary hover:text-secondary">Empresas</a>
-<a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
+<a href="/servicios" class="text-secondary font-extrabold border-b-4 border-secondary pb-1">Servicios</a>
 <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
 <a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
 <a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>

@@ -85,6 +85,14 @@
 
   <style>
 
+    
+    /* Active Nav Link */
+    .nav-active {
+      color: #002d4c !important;
+      font-weight: 700 !important;
+      border-bottom: 3px solid #006e27;
+      padding-bottom: 4px;
+    }
     /* Uniformidad Tipográfica Global */
     h1 { font-size: clamp(32px, 6vw, 56px) !important; font-weight: 800 !important; letter-spacing: -0.03em !important; line-height: 1.1 !important; }
     h2 { font-size: clamp(26px, 4.5vw, 40px) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.2 !important; }
@@ -122,7 +130,7 @@
 <div class="hidden md:flex gap-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200 nav-active" href="/empresas">Empresas</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/servicios">Servicios</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/nosotros">Nosotros</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
@@ -145,7 +153,7 @@
 </button>
 <a href="/" class="text-primary hover:text-secondary">Inicio</a>
 <a href="/persona-fisica" class="text-primary hover:text-secondary">Persona Física</a>
-<a href="/empresas" class="text-primary hover:text-secondary">Empresas</a>
+<a href="/empresas" class="text-secondary font-extrabold border-b-4 border-secondary pb-1">Empresas</a>
 <a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
 <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
 <a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
