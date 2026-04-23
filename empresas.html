@@ -127,7 +127,7 @@
 <div class="flex items-center h-8 md:h-10">
 <a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
-<div class="hidden md:flex gap-8 items-center">
+<div class="hidden lg:flex gap-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200 nav-active" href="/empresas">Empresas</a>
@@ -136,10 +136,10 @@
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
 </div>
-<a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+<a href="/contacto" class="hidden lg:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
     Agenda tu asesoría
 </a>
-<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
+<button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
@@ -147,7 +147,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
 <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
 <span class="material-symbols-outlined text-primary">close</span>
 </button>
@@ -218,7 +218,7 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary-fixed text-primary">
             <span class="material-symbols-outlined">rocket_launch</span>
           </div>
@@ -232,7 +232,7 @@
           </a>
         </div>
 
-        <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container">
             <span class="material-symbols-outlined">query_stats</span>
           </div>
@@ -246,7 +246,7 @@
           </a>
         </div>
 
-        <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
             <span class="material-symbols-outlined">monetization_on</span>
           </div>
@@ -285,7 +285,7 @@
         </div>
 
         <div class="lg:col-span-8 flex flex-col gap-8">
-          <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                 <span class="material-symbols-outlined text-4xl">account_balance</span>
@@ -305,7 +305,7 @@
             </div>
           </div>
 
-          <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
                 <span class="material-symbols-outlined text-4xl">groups</span>
@@ -325,7 +325,7 @@
             </div>
           </div>
 
-          <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
                 <span class="material-symbols-outlined text-4xl">insights</span>
@@ -368,7 +368,7 @@
 
   <!-- Footer -->
     <footer class="bg-[#002b55] text-white pt-16 pb-8 font-body">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-6 md:p-12 mb-16">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-12 mb-16">
       <!-- Column 1 -->
       <div class="space-y-6">
         <img alt="Baja Tax" class="h-10 w-auto" src="assets/logo2.png">
@@ -440,6 +440,15 @@
 
 
 
-\n</body>
+\n
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('translate-x-full');
+      // Prevenir scroll cuando el menú está abierto
+      document.body.classList.toggle('overflow-hidden');
+    }
+  </script>
+</body>
 </html>
 

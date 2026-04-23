@@ -128,7 +128,7 @@
 <div class="flex items-center h-8 md:h-10">
 <a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
-<div class="hidden md:flex gap-8 items-center">
+<div class="hidden lg:flex gap-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200 nav-active" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -137,10 +137,10 @@
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
 </div>
-<a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+<a href="/contacto" class="hidden lg:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
     Agenda tu asesoría
 </a>
-<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
+<button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
@@ -148,7 +148,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
 <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
 <span class="material-symbols-outlined text-primary">close</span>
 </button>
@@ -167,7 +167,7 @@
 
 
   <!-- Hero Section -->
-  <header class="relative pt-[120px] md:pt-[180px] pb-14 lg:pb-32 overflow-hidden bg-white">
+  <header class="relative pt-[120px] md:pt-[150px] pb-14 lg:pb-32 overflow-hidden bg-white">
     <div class="max-w-[1280px] mx-auto px-8 relative z-10">
       <div class="grid lg:grid-cols-2 gap-10 md:gap-24 items-center">
         <div class="space-y-10">
@@ -208,7 +208,7 @@
 
       <div class="grid md:grid-cols-2 gap-10">
         <!-- Persona Física -->
-        <div class="bg-white p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
+        <div class="bg-white p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
           <div class="mb-8 text-secondary bg-secondary/10 p-4 rounded-2xl">
             <span class="material-symbols-outlined text-3xl">person</span>
           </div>
@@ -223,7 +223,7 @@
         </div>
 
         <!-- Empresas -->
-        <div class="bg-slate-200/50 p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
+        <div class="bg-slate-200/50 p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
           <div class="mb-8 text-primary bg-primary/10 p-4 rounded-2xl">
             <span class="material-symbols-outlined text-3xl">corporate_fare</span>
           </div>
@@ -258,7 +258,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="group bg-slate-50/80 p-6 md:p-5 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
+        <div class="group bg-slate-50/80 p-6 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
           <span class="material-symbols-outlined text-primary group-hover:text-secondary transition-colors mb-8 text-3xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
           <h4 class="font-headline text-xl md:text-2xl font-bold mb-5 text-primary group-hover:text-white transition-colors leading-tight">Regulariza tus impuestos</h4>
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
@@ -269,7 +269,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="group bg-slate-50/80 p-6 md:p-5 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
+        <div class="group bg-slate-50/80 p-6 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
           <span class="material-symbols-outlined text-primary group-hover:text-secondary transition-colors mb-8 text-3xl">groups</span>
           <h4 class="font-headline text-xl md:text-2xl font-bold mb-5 text-primary group-hover:text-white transition-colors leading-tight">Apoyo con nómina</h4>
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
@@ -280,7 +280,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="group bg-slate-50/80 p-6 md:p-5 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
+        <div class="group bg-slate-50/80 p-6 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
           <span class="material-symbols-outlined text-primary group-hover:text-secondary transition-colors mb-8 text-3xl">domain_add</span>
           <h4 class="font-headline text-xl md:text-2xl font-bold mb-5 text-primary group-hover:text-white transition-colors leading-tight">Constitución de empresas</h4>
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
@@ -291,7 +291,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="group bg-slate-50/80 p-6 md:p-5 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
+        <div class="group bg-slate-50/80 p-6 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
           <span class="material-symbols-outlined text-primary group-hover:text-secondary transition-colors mb-8 text-3xl">account_balance</span>
           <h4 class="font-headline text-xl md:text-2xl font-bold mb-5 text-primary group-hover:text-white transition-colors leading-tight">Asesoría para negocios</h4>
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
@@ -302,7 +302,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="group bg-slate-50/80 p-6 md:p-5 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
+        <div class="group bg-slate-50/80 p-6 md:p-10 rounded-[2rem] flex flex-col h-full hover:bg-primary transition-colors duration-300 border-none">
           <span class="material-symbols-outlined text-primary group-hover:text-secondary transition-colors mb-8 text-3xl">receipt_long</span>
           <h4 class="font-headline text-xl md:text-2xl font-bold mb-5 text-primary group-hover:text-white transition-colors leading-tight">Facturación electrónica 4.0</h4>
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
@@ -425,7 +425,7 @@
 
   <!-- Footer -->
     <footer class="bg-[#002b55] text-white pt-16 pb-8 font-body">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-6 md:p-12 mb-16">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-12 mb-16">
       <!-- Column 1 -->
       <div class="space-y-6">
         <img alt="Baja Tax" class="h-10 w-auto object-contain" src="assets/logo2.png">
@@ -497,6 +497,15 @@
 
 
 
-\n</body>
+\n
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('translate-x-full');
+      // Prevenir scroll cuando el menú está abierto
+      document.body.classList.toggle('overflow-hidden');
+    }
+  </script>
+</body>
 </html>
 

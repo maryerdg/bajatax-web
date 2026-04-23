@@ -1,5 +1,5 @@
   <footer class="bg-[#002b55] text-white pt-16 pb-8 font-body">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-6 md:p-12 mb-16">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-12 mb-16">
       <!-- Column 1 -->
       <div class="space-y-6">
         <img alt="Baja Tax" class="h-10 w-auto" src="assets/logo2.png">
@@ -67,3 +67,12 @@
     </div>
   </footer>
 
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('translate-x-full');
+      // Prevenir scroll cuando el menú está abierto
+      document.body.classList.toggle('overflow-hidden');
+    }
+  </script>

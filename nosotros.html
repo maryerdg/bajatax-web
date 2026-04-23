@@ -121,7 +121,7 @@ tailwind.config = {
 <div class="flex items-center h-8 md:h-10">
 <a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
-<div class="hidden md:flex gap-8 items-center">
+<div class="hidden lg:flex gap-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -130,10 +130,10 @@ tailwind.config = {
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
 </div>
-<a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+<a href="/contacto" class="hidden lg:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
     Agenda tu asesoría
 </a>
-<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
+<button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
 <span class="w-6 h-0.5 bg-primary rounded"></span>
@@ -141,7 +141,7 @@ tailwind.config = {
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
 <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
 <span class="material-symbols-outlined text-primary">close</span>
 </button>
@@ -159,12 +159,13 @@ tailwind.config = {
 
 
 
-<main class="pt-24">
+<main>
 
   <!-- Hero Section -->
-  <section class="px-8 py-12 md:py-24 max-w-7xl mx-auto">
-    <div class="grid grid-cols-12 gap-6 md:p-6 md:p-12 items-center">
-      <div class="col-span-12 lg:col-span-7">
+  <header class="relative pt-[120px] md:pt-[150px] pb-14 lg:pb-20 overflow-hidden bg-white">
+    <div class="max-w-[1280px] mx-auto px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-10 md:gap-24 items-center">
+      <div>
         <div class="max-w-xl">
           <span class="text-primary/40 font-headline font-bold tracking-[0.25em] text-[10px] uppercase mb-6 block">Nuestra firma</span>
           <h1 class="font-headline font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
@@ -173,10 +174,15 @@ tailwind.config = {
           <p class="text-base md:text-lg md:text-xl text-on-surface-variant leading-relaxed font-normal">
             Somos una firma local de contadores en Tijuana, Baja California, especializada en impuestos, nóminas, contabilidad, servicios legales y asesoría para negocios. Acompañamos a personas físicas y empresas con un enfoque claro, profesional y bilingüe. 
           </p>
+          <div class="flex flex-col sm:flex-row gap-6 pt-6">
+            <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">
+              Agenda tu asesoría
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="col-span-12 lg:col-span-5">
+      <div class="hidden lg:block">
         <div class="relative w-full aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
           <img alt="Ambiente profesional de trabajo en Baja Tax" class="w-full h-full object-cover brightness-95 contrast-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5PDHuQjKakT9hw0QclUwwPKpvNKGC_T0fg6Hg17bQL5VQDbih3Wgtvhl-Bgla1tt9ZB5RB4vTspghtbl2pAM6uwDi09g6YZzD6kgCp_lsorwCGJ7zBYeLY2UI0xdxx_MyTxSXJomWaxKRpaEaOGSo4AXfuVrvMRB0dtHjHpotoxbkxnmx2D_uRrWScEUOspHNN1JHpBiPdcQDQRRppMipiiTMDx_jlxSn0HbfLHUXadw-5Knh-Z7dozRi3c68uSxralLBd_uWng">
           <div class="absolute inset-0 hero-overlay"></div>
@@ -187,7 +193,7 @@ tailwind.config = {
 
   <!-- Stats Bar -->
   <section class="bg-primary py-16">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-around items-center gap-6 md:p-6 md:p-12 text-center">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-around items-center gap-6 md:p-12 text-center">
       <div>
         <div class="text-5xl font-headline font-extrabold text-white mb-3">18+</div>
         <div class="text-white/90 font-headline font-bold tracking-[0.12em] text-[11px] uppercase">Años de experiencia</div>
@@ -213,7 +219,7 @@ tailwind.config = {
   <section class="bg-surface-container-low py-24">
     <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-20 items-center">
       <div class="order-2 lg:order-1">
-        <div class="bg-surface-container-lowest p-6 md:p-6 md:p-12 rounded-2xl">
+        <div class="bg-surface-container-lowest p-6 md:p-12 rounded-2xl">
           <h2 class="font-headline font-bold text-primary mb-8">Quiénes somos</h2>
           <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
             En Baja Tax trabajamos para que nuestros clientes mantengan sus finanzas y responsabilidades fiscales en orden. Nuestro propósito es brindar tranquilidad, evitar errores costosos y acompañar cada decisión con honestidad, responsabilidad y claridad.
@@ -287,14 +293,29 @@ tailwind.config = {
         <div class="bg-white p-6 md:p-8 rounded-xl">
           <h3 class="font-bold text-primary mb-3">Impuestos y contabilidad</h3>
           <p class="text-on-surface-variant leading-relaxed">Preparación de impuestos, contabilidad electrónica y asesoría fiscal con apego a la normatividad vigente.</p>
+          <div class="flex flex-col sm:flex-row gap-6 pt-6">
+            <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">
+              Agenda tu asesoría
+            </a>
+          </div>
         </div>
         <div class="bg-white p-6 md:p-8 rounded-xl">
           <h3 class="font-bold text-primary mb-3">Nóminas y seguridad social</h3>
           <p class="text-on-surface-variant leading-relaxed">Procesamiento de nómina y cumplimiento laboral para mantener a tu empresa en orden.</p>
+          <div class="flex flex-col sm:flex-row gap-6 pt-6">
+            <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">
+              Agenda tu asesoría
+            </a>
+          </div>
         </div>
         <div class="bg-white p-6 md:p-8 rounded-xl">
           <h3 class="font-bold text-primary mb-3">Legal y asesoría para negocios</h3>
           <p class="text-on-surface-variant leading-relaxed">Apoyo legal, constitución de empresas, facturación 4.0 y acompañamiento estratégico para negocios.</p>
+          <div class="flex flex-col sm:flex-row gap-6 pt-6">
+            <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">
+              Agenda tu asesoría
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -307,7 +328,7 @@ tailwind.config = {
         <h2 class="font-headline font-extrabold text-white mb-8 tracking-tight">¿Listo para recibir asesoría clara y profesional?</h2>
         <p class="text-white/80 text-base md:text-lg mb-16 max-w-2xl mx-auto font-body">Agenda una asesoría y recibe orientación para mantener tus finanzas y obligaciones fiscales en orden.</p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <a class="bg-secondary text-white px-8 py-4 rounded-xl font-headline font-bold hover:brightness-110 transition-all" href="/contacto">
+          <a class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-8 py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm" href="/contacto">
             Agenda tu asesoría
           </a>
           <a class="bg-white/5 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-headline font-bold hover:bg-white/10 transition-all" href="/servicios">
@@ -327,7 +348,7 @@ tailwind.config = {
 
 <!-- Footer -->
   <footer class="bg-[#002b55] text-white pt-16 pb-8 font-body">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-6 md:p-12 mb-16">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:p-12 mb-16">
       <!-- Column 1 -->
       <div class="space-y-6">
         <img alt="Baja Tax" class="h-10 w-auto" src="assets/logo2.png">
@@ -393,6 +414,15 @@ tailwind.config = {
 
 
 
-\n</body>
+\n
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('translate-x-full');
+      // Prevenir scroll cuando el menú está abierto
+      document.body.classList.toggle('overflow-hidden');
+    }
+  </script>
+</body>
 </html>
 
