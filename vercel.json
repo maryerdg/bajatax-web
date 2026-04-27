@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "version": 2,
+  "cleanUrls": true,
+  "framework": null,
+  "installCommand": "echo 'No install needed'",
+  "buildCommand": "echo 'Static site - no build needed'"
 }
