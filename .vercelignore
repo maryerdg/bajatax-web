@@ -1,0 +1,6 @@
+*.py
+LLAVES/
+.git/
+README.md
+DESIGN.md
+desktop.ini
